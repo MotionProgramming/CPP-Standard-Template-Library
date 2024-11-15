@@ -1,6 +1,10 @@
-/// In the name of ALLAH
+//============================================================================
+// In the name of ALLAH
+// learn the basics of vectors in C++
 
-/// learn the basics of vectors in C++
+// Name        : .cpp
+// Author      : MotionProgramming(Md. Abdullah Rajeb)
+//============================================================================
 
 #include <bits/stdc++.h>
 using namespace std;
