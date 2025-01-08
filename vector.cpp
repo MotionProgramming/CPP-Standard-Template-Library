@@ -105,6 +105,26 @@ int main()
     cout << endl; 
     // Output: 5 4 3 2 1 (sorted in descending order)
 
+    //vector value input way
+    int n;
+
+    cin >> n;
+
+    vector<int> vec;  
+
+    for (int i = 0; i < n; i++) {
+        int value;
+        cin >> value;
+        vec.push_back(value);  
+    }
+
+    // Output the vector values
+    cout << "The values in the vector are:" << endl;
+    for (int i = 0; i < vec.size(); i++) {
+        cout << vec[i] << " ";
+    }
+    cout << endl; 
+
     // Sort the vector a in descending order using the greater comparator
     a = {3, 4, 5, 1, 2};
     sort(a.begin(), a.end(), greater<int>());
@@ -157,10 +177,10 @@ int main()
 
     // Remove consecutive duplicates and calculate the new size of the vector
     a = {1, 1, 2, 2, 2, 3, 3};
-    int n = unique(a.begin(), a.end()) - a.begin();
-    cout << n << endl; 
+    int new_size = unique(a.begin(), a.end()) - a.begin();
+    cout << new_size << endl; 
     // Output: 3 (unique element count)
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < new_size; i++)
         cout << a[i] << " "; 
     cout << endl; 
     // Output: 1 2 3 (unique elements)
